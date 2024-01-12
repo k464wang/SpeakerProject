@@ -1,0 +1,17 @@
+<!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">-->
+
+<p>
+    <button (click)="reloadComponent()">  Refresh </button>
+    <span style="float:right">
+        <input type="checkbox" [checked] = "isSpeaker" (change)="SpeakerEnable($event)">
+        Speaker
+    </span>
+</p>
+<h2>{{ title  }}</h2>
+<ul class = "song">
+    <li *ngFor="let song of keys">
+        <button [class.selected] ="song === selectedSong" type = "button" (click)="songComponentLink(song)"> {{ song }} </button>
+        
+
+    </li>  
+</ul>

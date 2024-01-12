@@ -1,0 +1,51 @@
+.song {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .song li {
+    display: flex;
+  }
+
+.song button {
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(28, 153, 255);;
+    margin: 0em;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    border-radius: 0px;
+    display: flex;
+    align-items: stretch;
+    height: 1.8em;
+  }
+  
+  .song button:hover {
+    color: #2c3a41;
+    background-color: #0077ff;
+    left: .1em;
+  }
+  
+  .song button:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  
+  .song button.selected {
+    background-color: black;
+    color: white;
+  }
+  
+  .song button.selected:hover {
+    background-color: #505050;
+    color: white;
+  }
+  
+  .song button.selected:active {
+    background-color: black;
+    color: white;
+  }
